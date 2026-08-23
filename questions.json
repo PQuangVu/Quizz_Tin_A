@@ -1,0 +1,870 @@
+[
+  {
+    "id": 1,
+    "question": "Chương trình nào là một ví dụ về chương trình dùng để trình chiếu?",
+    "options": ["Microsoft PowerPoint", "Microsoft Word", "Microsoft Publisher", "Skype"],
+    "answer": 0,
+    "hint": "Phần mềm trình chiếu slide của Microsoft Office."
+  },
+  {
+    "id": 2,
+    "question": "Chương trình nào sau đây là một ví dụ của trình duyệt web?",
+    "options": ["Microsoft Word", "Skype", "Internet Explorer", "OneDrive"],
+    "answer": 2,
+    "hint": "Trình duyệt web cổ điển của Windows."
+  },
+  {
+    "id": 3,
+    "question": "Mã nguồn mở (Open Source) là gì?",
+    "options": ["Một trình duyệt web", "Một loại phần cứng", "Một bản quyền thương mại cho phần mềm", "Một loại bản quyền phần mềm cho phép xem, chỉnh sửa và phân phối tự do"],
+    "answer": 3,
+    "hint": "Cung cấp mã nguồn công khai."
+  },
+  {
+    "id": 4,
+    "question": "Quan hệ giữa bit và byte như thế nào là đúng?",
+    "options": ["1 bit = 8 bytes", "1 bit = 24 bytes", "1 byte = 8 bit", "1 bit = 2 bytes"],
+    "answer": 2,
+    "hint": "1 byte gồm 8 bit."
+  },
+  {
+    "id": 5,
+    "question": "Safe Mode là gì?",
+    "options": ["Một cách khởi động lại Windows chỉ nạp những yếu tố cần thiết nhất cho chức năng cơ bản", "Thông báo lỗi trên Windows", "Giao thức mạng", "Quá trình cập nhật firmware phần cứng"],
+    "answer": 0,
+    "hint": "Chế độ nạp tối thiểu để chuẩn đoán và sửa lỗi."
+  },
+  {
+    "id": 6,
+    "question": "Thành phần bên trong nào thực hiện các tính toán và các phép toán logic?",
+    "options": ["Các chip RAM", "Bộ vi xử lý (CPU)", "Bo mạch chủ", "ROM-BIOS"],
+    "answer": 1,
+    "hint": "Bộ não trung tâm của máy tính."
+  },
+  {
+    "id": 7,
+    "question": "WWW là viết tắt của cụm từ nào?",
+    "options": ["Wild Wild West", "World Wide WAN", "World Wide Fund for Nature", "World Wide Web"],
+    "answer": 3,
+    "hint": "Mạng thông tin toàn cầu."
+  },
+  {
+    "id": 8,
+    "question": "Để xem các chương trình được cài đặt trên hệ thống của bạn, với tùy chọn từ nút Start bạn sẽ sử dụng?",
+    "options": ["Search", "Documents", "All Programs", "Danh sách Quick Start"],
+    "answer": 2,
+    "hint": "All Programs."
+  },
+  {
+    "id": 9,
+    "question": "Đơn vị đo lường thường được sử dụng để chỉ dung lượng RAM được lắp trong máy tính hiện nay là gì?",
+    "options": ["MHz", "GHz", "MB", "GB"],
+    "answer": 3,
+    "hint": "Gigabyte."
+  },
+  {
+    "id": 10,
+    "question": "Ba nút mặc định trên Quick Access Toolbar trước khi bạn tùy biến là?",
+    "options": ["Print, Undo, Redo", "Open, Undo, Save", "New, Save, Redo", "Undo, Redo, Save"],
+    "answer": 3,
+    "hint": "Save, Undo và Redo."
+  },
+  {
+    "id": 11,
+    "question": "Cách khởi động Microsoft Excel chuẩn từ menu Start?",
+    "options": ["Click Start, Microsoft Office, Microsoft Excel 2010", "Click Start, All Programs, Microsoft Excel 2010", "Click Start, All Programs, Microsoft Office, Microsoft Excel 2010", "Click Start, Programs, Microsoft Excel 2010"],
+    "answer": 2,
+    "hint": "Start -> All Programs -> Microsoft Office -> Excel."
+  },
+  {
+    "id": 12,
+    "question": "Chế độ hiển thị nào bạn nên áp dụng cho các văn bản nhận được từ bên ngoài qua email?",
+    "options": ["Read Only View", "Protected View", "Web Layout View", "Full Screen Reading View"],
+    "answer": 1,
+    "hint": "Protected View (Chế độ xem được bảo vệ)."
+  },
+  {
+    "id": 13,
+    "question": "Cho biết phần mở rộng của chương trình Microsoft Access?",
+    "options": ["*.xlsx", "*.doc, *.docx", "*.pptx", "*.accdb"],
+    "answer": 3,
+    "hint": "Access Database (.accdb)."
+  },
+  {
+    "id": 14,
+    "question": "Cho biết phần mở rộng của chương trình Microsoft Excel?",
+    "options": ["*.accdb", "*.pptx", "*.xlsx", "*.doc, *.docx"],
+    "answer": 2,
+    "hint": ".xlsx."
+  },
+  {
+    "id": 15,
+    "question": "Cho biết phần mở rộng của chương trình Microsoft PowerPoint?",
+    "options": ["*.accdb", "*.doc, *.docx", "*.xlsx", "*.pptx"],
+    "answer": 3,
+    "hint": ".pptx."
+  },
+  {
+    "id": 16,
+    "question": "Cho biết phần mở rộng của chương trình Microsoft Word?",
+    "options": ["*.xlsx", "*.doc, *.docx", "*.pptx", "*.accdb"],
+    "answer": 1,
+    "hint": ".docx."
+  },
+  {
+    "id": 17,
+    "question": "Hiệu ứng chuyển trang slide trong PowerPoint là gì?",
+    "options": ["Animations", "Switch page", "Switch slide", "Transition"],
+    "answer": 3,
+    "hint": "Transition."
+  },
+  {
+    "id": 18,
+    "question": "Phím nào bạn dùng để chọn các đoạn văn bản không liền kề nhau?",
+    "options": ["Ctrl", "Shift", "Alt", "Fn"],
+    "answer": 0,
+    "hint": "Phím Ctrl."
+  },
+  {
+    "id": 19,
+    "question": "RAM là viết tắt của cụm từ nào dưới đây?",
+    "options": ["StoRage of Memory", "Resources of Memory", "Random Output Measure", "Random Access Memory"],
+    "answer": 3,
+    "hint": "Random Access Memory."
+  },
+  {
+    "id": 20,
+    "question": "ROM là viết tắt của cụm từ nào sau đây?",
+    "options": ["Read Only Memory", "Từ thực đơn Start", "Random Output Measure", "Resources of Memory"],
+    "answer": 0,
+    "hint": "Read Only Memory."
+  },
+  {
+    "id": 21,
+    "question": "Thành phần nào quyết định việc nạp hệ thống khởi động máy tính?",
+    "options": ["CPU", "RAM", "ROM-BIOS", "Card đồ họa"],
+    "answer": 2,
+    "hint": "ROM-BIOS."
+  },
+  {
+    "id": 22,
+    "question": "Tiện ích nào sau đây có thể bảo vệ máy tính của bạn khỏi bị tấn công?",
+    "options": ["Antivirus software", "Disk compression", "Disk check", "Disk defragmentation"],
+    "answer": 0,
+    "hint": "Phần mềm diệt virus."
+  },
+  {
+    "id": 23,
+    "question": "Trong Word, phím tắt nào được sử dụng để di chuyển nhanh về đầu dòng?",
+    "options": ["Home", "Ctrl+Home", "PgDn", "Ctrl+ Down Arrow"],
+    "answer": 0,
+    "hint": "Phím Home."
+  },
+  {
+    "id": 24,
+    "question": "Trong Word, phím tắt nào được sử dụng để di chuyển nhanh về đầu trang/tài liệu?",
+    "options": ["Home", "Ctrl+Home", "PgDn", "Ctrl+ Down Arrow"],
+    "answer": 1,
+    "hint": "Tổ hợp Ctrl + Home."
+  },
+  {
+    "id": 25,
+    "question": "Bạn muốn di chuyển một thư mục vào vị trí khác, hai lệnh nào để thực hiện?",
+    "options": ["Cut và Paste", "Copy và Paste", "Cut và Move", "Copy và Move"],
+    "answer": 0,
+    "hint": "Cắt (Cut) và Dán (Paste)."
+  },
+  {
+    "id": 26,
+    "question": "Tùy chọn nào sau đây không phải là một thẻ (Tab) của Ribbon?",
+    "options": ["Insert", "Home", "Review", "Clipboard"],
+    "answer": 3,
+    "hint": "Clipboard là một Group trong thẻ Home."
+  },
+  {
+    "id": 27,
+    "question": "Hai tổ hợp phím tắt dùng để sao chép và dán một tập tin vào vị trí khác là gì?",
+    "options": ["Ctrl+C và Ctrl+X", "Ctrl+C và Ctrl+V", "Ctrl+X và Ctrl+V", "Ctrl+X và Ctrl+P"],
+    "answer": 1,
+    "hint": "Ctrl+C và Ctrl+V."
+  },
+  {
+    "id": 28,
+    "question": "Lệnh nào sau đây mà bạn có thể sử dụng để kiểm tra kết nối giữa hai thiết bị trên mạng?",
+    "options": ["ping", "ipconfig", "FTP", "Google"],
+    "answer": 0,
+    "hint": "Lệnh Ping."
+  },
+  {
+    "id": 29,
+    "question": "Lệnh nào sau đây được sử dụng để hiển thị tất cả các cấu hình IP trên hệ thống Windows?",
+    "options": ["ipconfig", "tracert", "ping", "ipconfig /all"],
+    "answer": 3,
+    "hint": "ipconfig /all."
+  },
+  {
+    "id": 30,
+    "question": "Lựa chọn nào sau đây là hệ điều hành?",
+    "options": ["Microsoft Windows", "Microsoft Office", "Intel Core i5", "Phần cứng Hardware"],
+    "answer": 0,
+    "hint": "Windows hoặc Android."
+  },
+  {
+    "id": 31,
+    "question": "Lựa chọn nào sau đây là chương trình trình chiếu?",
+    "options": ["Google", "Mozilla Firefox", "Microsoft PowerPoint", "Microsoft Word"],
+    "answer": 2,
+    "hint": "PowerPoint."
+  },
+  {
+    "id": 32,
+    "question": "Lựa chọn nào sau đây là công cụ tìm kiếm trên Internet?",
+    "options": ["Google", "Facebook", "Microsoft Word", "Windows Explorer"],
+    "answer": 0,
+    "hint": "Google, Bing, Yahoo."
+  },
+  {
+    "id": 33,
+    "question": "Lựa chọn nào sau đây là đặc điểm của các hệ điều hành hiện đại?",
+    "options": ["Không thể học được", "Đa nhiệm (Multitasking)", "Sử dụng thời gian hạn chế", "Chỉ chạy 1 ứng dụng duy nhất"],
+    "answer": 1,
+    "hint": "Đa nhiệm (Multitasking)."
+  },
+  {
+    "id": 34,
+    "question": "Phím nào dưới đây để thực hiện việc kiểm tra chính tả (Spelling)?",
+    "options": ["F3", "F7", "F5", "F9"],
+    "answer": 1,
+    "hint": "Phím F7."
+  },
+  {
+    "id": 35,
+    "question": "Để sắp xếp và lọc dữ liệu trong Excel ta dùng chức năng nào sau đây?",
+    "options": ["Sort and Filter", "Find and replace", "Find and Filter", "Data Grouping"],
+    "answer": 0,
+    "hint": "Sort and Filter."
+  },
+  {
+    "id": 36,
+    "question": "Trong Microsoft Word 2010, lựa chọn nào khi muốn xuống dòng mà không kết thúc đoạn?",
+    "options": ["Bấm phím Enter", "Bấm tổ hợp phím Ctrl+Enter", "Bấm tổ hợp phím Shift+Enter", "Bấm tổ hợp phím Alt+Enter"],
+    "answer": 2,
+    "hint": "Shift + Enter."
+  },
+  {
+    "id": 37,
+    "question": "Trong PowerPoint 2010, để hiển thị bản trình bày chứa ba khung Outline, Slide and Notes, bạn dùng:",
+    "options": ["Slide Sorter", "Normal", "Slide Show", "Reading View"],
+    "answer": 1,
+    "hint": "Chế độ xem Normal."
+  },
+  {
+    "id": 38,
+    "question": "Trong Windows, thuộc tính nào dùng để hiển thị thanh Taskbar luôn nằm trên các cửa sổ?",
+    "options": ["Keep the Taskbar on top of other Windows", "Lock the Taskbar", "Auto-Hide the Taskbar", "Show the clock"],
+    "answer": 0,
+    "hint": "Keep Taskbar on top."
+  },
+  {
+    "id": 39,
+    "question": "Loại máy tính nào cung cấp dịch vụ cho các máy khách kết nối với nhau trên mạng?",
+    "options": ["Máy chủ (Server)", "Rack", "Switch", "Máy trạm (Workstation)"],
+    "answer": 0,
+    "hint": "Máy chủ Server."
+  },
+  {
+    "id": 40,
+    "question": "Bạn chèn đĩa CD vào máy, mở đĩa có thông báo lỗi. Nguyên nhân thường gặp nhất là:",
+    "options": ["Bạn đặt đĩa vào khay không đúng chiều", "Không đủ dung lượng bộ nhớ trống", "Đĩa chứa nhiều kiểu tập tin", "Pin máy tính yếu"],
+    "answer": 0,
+    "hint": "Đặt mặt đĩa bị úp/ngửa sai chiều."
+  },
+  {
+    "id": 41,
+    "question": "Lựa chọn nào sau đây là một ví dụ về địa chỉ URL?",
+    "options": ["http://www.microsoft.com", "#twitter", "john.smith@email.com", "C:\\Windows"],
+    "answer": 0,
+    "hint": "Bắt đầu bằng http://."
+  },
+  {
+    "id": 42,
+    "question": "Trong Excel 2010, khi nhập công thức có sử dụng hàm nhưng bị sai tên thì thông báo lỗi là:",
+    "options": ["#NAME?", "#VALUE!", "FALSE", "#N/A"],
+    "answer": 0,
+    "hint": "Lỗi #NAME?."
+  },
+  {
+    "id": 43,
+    "question": "Phím nào được dùng kết hợp trong khi chọn các đoạn văn bản liền kề nhau?",
+    "options": ["Alt", "Shift", "Ctrl", "Fn"],
+    "answer": 1,
+    "hint": "Phím Shift."
+  },
+  {
+    "id": 44,
+    "question": "Trong Microsoft Excel, dạng địa chỉ nào sau đây là địa chỉ tuyệt đối hoàn toàn?",
+    "options": ["B$2:D$8", "B2:D8", "$B$2:$D$8", "$B2:$D8"],
+    "answer": 2,
+    "hint": "$B$2:$D$8."
+  },
+  {
+    "id": 45,
+    "question": "Phím tắt nào sau đây dùng để đóng văn bản Word 2010 đang mở?",
+    "options": ["Ctrl + W", "Alt + C", "Ctrl + D", "Alt + W"],
+    "answer": 0,
+    "hint": "Ctrl + W."
+  },
+  {
+    "id": 46,
+    "question": "Phần mở rộng nào sau đây là của theme trong PowerPoint 2010?",
+    "options": [".thmx", ".pptx", ".pptm", ".potms"],
+    "answer": 0,
+    "hint": ".thmx."
+  },
+  {
+    "id": 47,
+    "question": "Cách tạo 1 slide mới giống hệt slide hiện tại là dùng lệnh:",
+    "options": ["Duplicate Slide", "Insert New Slide", "Home New Slide", "Reset Slide"],
+    "answer": 0,
+    "hint": "Duplicate Slide."
+  },
+  {
+    "id": 48,
+    "question": "Trong Excel 2010 địa chỉ $A5 hoặc B$6 là dạng địa chỉ gì?",
+    "options": ["Địa chỉ tương đối", "Địa chỉ tuyệt đối", "Địa chỉ hỗn hợp", "Địa chỉ chuỗi"],
+    "answer": 2,
+    "hint": "Địa chỉ hỗn hợp."
+  },
+  {
+    "id": 49,
+    "question": "Lựa chọn nào sau đây là ví dụ của dịch vụ chat?",
+    "options": ["Skype", "Internet Explorer", "Control Panel", "BIOS"],
+    "answer": 0,
+    "hint": "Skype."
+  },
+  {
+    "id": 50,
+    "question": "Microsoft PowerPoint không hỗ trợ chế độ views nào?",
+    "options": ["Normal", "Outline View", "Slide Sorter", "Holoview"],
+    "answer": 3,
+    "hint": "Holoview."
+  },
+  {
+    "id": 51,
+    "question": "Trong Microsoft PowerPoint, cách để tạo một bài trình chiếu mới là:",
+    "options": ["File -> New -> Blank Presentation", "File -> Open", "Home -> New -> File", "Insert -> Presentation"],
+    "answer": 0,
+    "hint": "File -> New."
+  },
+  {
+    "id": 52,
+    "question": "Phần mở rộng nào không phải là định dạng lưu trữ của Excel?",
+    "options": ["Xlsx", "Xls", "Xlsm", "Xlst"],
+    "answer": 3,
+    "hint": "Xlst."
+  },
+  {
+    "id": 53,
+    "question": "Thành phần nào không có trong cú pháp công thức tính toán của Excel?",
+    "options": ["Toán tử", "Hằng số", "Toán hạng, hàm", "Sai số"],
+    "answer": 3,
+    "hint": "Sai số."
+  },
+  {
+    "id": 54,
+    "question": "Thanh/nhóm công cụ nào trong Word cho phép thay đổi khoảng cách dòng (Line Spacing)?",
+    "options": ["Paragraph", "Layout", "Insert", "Review"],
+    "answer": 0,
+    "hint": "Paragraph."
+  },
+  {
+    "id": 55,
+    "question": "Lựa chọn nào sau đây là địa chỉ email hợp lệ?",
+    "options": ["Nguyenvantam.com", "Nhatnam.edu.vn", "123@edushopvn20", "Nguyennhatnam@yahoo.com"],
+    "answer": 3,
+    "hint": "Có cấu trúc name@domain.com."
+  },
+  {
+    "id": 56,
+    "question": "Quyền cho phép truy cập vào xem tập tin nhưng không cho thay đổi nội dung là:",
+    "options": ["Read / Write", "Open", "Modify", "Read"],
+    "answer": 3,
+    "hint": "Quyền Read."
+  },
+  {
+    "id": 57,
+    "question": "Lệnh nào chuyển đổi qua lại giữa các cửa sổ ứng dụng trong Windows?",
+    "options": ["Ctrl + Tab", "Alt + Tab", "Alt + Enter", "Shift + Enter"],
+    "answer": 1,
+    "hint": "Alt + Tab."
+  },
+  {
+    "id": 58,
+    "question": "View nào trình bày, thiết kế nội dung, chỉnh sửa soạn thảo trong PowerPoint?",
+    "options": ["Normal", "Reading View", "Slide Sorter", "Notes Page"],
+    "answer": 0,
+    "hint": "Normal."
+  },
+  {
+    "id": 59,
+    "question": "Trong Excel 2010 độ rộng của ký tự kiểu số khi vượt quá giới hạn cột sẽ xuất hiện ký tự?",
+    "options": ["#", "@", "!", "$"],
+    "answer": 0,
+    "hint": "Dấu thăng (#)."
+  },
+  {
+    "id": 60,
+    "question": "Trong Microsoft PowerPoint 2010 để chèn công thức toán học ta chọn?",
+    "options": ["Insert -> Equation", "Home -> New Equation", "Review -> Equation", "Design -> Equation"],
+    "answer": 0,
+    "hint": "Insert -> Equation."
+  },
+  {
+    "id": 61,
+    "question": "Tập tin tính toán, lưu trữ và vẽ đồ thị trong Excel là loại tập tin nào?",
+    "options": ["Worksheet", "WorkBook", "Document", "Presentation"],
+    "answer": 1,
+    "hint": "Workbook."
+  },
+  {
+    "id": 62,
+    "question": "Để đổi chữ thường thành chữ hoa trong khi ta gõ phím, ta giữ phím nào?",
+    "options": ["Alt", "Ctrl", "Shift", "Esc"],
+    "answer": 2,
+    "hint": "Phím Shift."
+  },
+  {
+    "id": 63,
+    "question": "Để lưu tập tin đang mở ta bấm tổ hợp phím nào?",
+    "options": ["Ctrl + A", "Ctrl + K", "Ctrl + S", "Alt + S"],
+    "answer": 2,
+    "hint": "Ctrl + S (Save)."
+  },
+  {
+    "id": 64,
+    "question": "Trong Word 2010 để di chuyển nhanh đến đầu đoạn tiếp theo ta dùng tổ hợp phím?",
+    "options": ["Ctrl + Home", "Home", "Ctrl + Down Arrow", "Shift + Down Arrow"],
+    "answer": 2,
+    "hint": "Ctrl + Mũi tên xuống."
+  },
+  {
+    "id": 65,
+    "question": "Trình duyệt nào của Google được công bố có thời gian tải nhanh nhất?",
+    "options": ["FireFox", "Safari", "Google Chrome", "Cốc Cốc"],
+    "answer": 2,
+    "hint": "Google Chrome."
+  },
+  {
+    "id": 66,
+    "question": "Trong Excel 2010 lựa chọn nào không phải là hàm luận lý?",
+    "options": ["AND", "OR", "NOT", "YES"],
+    "answer": 3,
+    "hint": "YES không phải là hàm."
+  },
+  {
+    "id": 67,
+    "question": "Tổ hợp phím để tạo bảng tính (Workbook) mới trong Excel 2010?",
+    "options": ["Ctrl + O", "Ctrl + M", "Ctrl + N", "Ctrl + K"],
+    "answer": 2,
+    "hint": "Ctrl + N."
+  },
+  {
+    "id": 68,
+    "question": "Để hiện/ẩn các thành phần trong thanh menu Ribbon trong Excel 2010 ta làm thế nào?",
+    "options": ["File -> Options -> Customize Ribbon", "File -> New -> Customize", "Help -> ShowRibbon", "Home -> ShowHide"],
+    "answer": 0,
+    "hint": "File -> Options -> Customize Ribbon."
+  },
+  {
+    "id": 69,
+    "question": "Phần mở rộng nào không phải của file Excel?",
+    "options": ["xls", "xlsx", "xla", "bmp"],
+    "answer": 3,
+    "hint": "BMP là file ảnh."
+  },
+  {
+    "id": 70,
+    "question": "Nếu mọi thứ trên màn hình quá nhỏ để nhìn thấy, bạn có thể làm gì?",
+    "options": ["Tăng độ phân giải màn hình", "Điều chỉnh font chữ lớn hơn hoặc giảm độ phân giải màn hình", "Rút dây nguồn", "Khởi động Safe Mode"],
+    "answer": 1,
+    "hint": "Tăng font hoặc giảm độ phân giải."
+  },
+  {
+    "id": 71,
+    "question": "Thiết bị nào được thay thế khi dùng màn hình cảm ứng?",
+    "options": ["Microphone", "Máy in", "Máy quét", "Chuột (Mouse)"],
+    "answer": 3,
+    "hint": "Chuột máy tính."
+  },
+  {
+    "id": 72,
+    "question": "Chức năng của bộ nguồn máy tính (PSU) là gì?",
+    "options": ["Chuyển điện AC thành DC có điện thế thấp", "Chuyển điện AC thành DC có điện thế cao", "Chuyển điện DC thành AC có điện thế thấp", "Lưu trữ dữ liệu khi tắt máy"],
+    "answer": 0,
+    "hint": "Chuyển điện xoay chiều AC thành một chiều DC."
+  },
+  {
+    "id": 73,
+    "question": "Trong PowerPoint 2010, khi sử dụng Home -> Slides -> New Slide thì slide mới nằm ở đâu?",
+    "options": ["Chèn thêm 1 slide mới vào ngay trước slide đầu tiên", "Chèn thêm 1 slide mới vào ngay sau slide hiện hành", "Chèn thêm 1 slide mới vào ngay sau slide cuối cùng", "Chèn trước slide hiện hành"],
+    "answer": 1,
+    "hint": "Ngay sau slide đang chọn."
+  },
+  {
+    "id": 74,
+    "question": "Điều nào sau đây là đúng liên quan đến hệ thống thoại trên IP (VoIP)?",
+    "options": ["Phụ thuộc vào loại phần cứng", "Chuyên dụng trong kinh doanh", "Dịch vụ miễn phí", "Không yêu cầu một đường dây điện thoại truyền thống"],
+    "answer": 3,
+    "hint": "Truyền tín hiệu thoại qua Internet."
+  },
+  {
+    "id": 75,
+    "question": "Loại phần mềm nào cho phép người dùng tự do sao chép, phân phối, nghiên cứu và sửa đổi?",
+    "options": ["Owned software", "Free Software / Open Source", "Private software", "Commercial software"],
+    "answer": 1,
+    "hint": "Phần mềm mã nguồn mở/tự do."
+  },
+  {
+    "id": 76,
+    "question": "Trong MS Word 2010, cách nào để ẩn/hiện thanh công cụ Ribbon?",
+    "options": ["Kích đúp chuột vào tab trên Ribbon", "Chuột phải chọn Minimize the Ribbon", "Nhấn tổ hợp phím Ctrl + F1", "Tất cả các cách trên đều đúng"],
+    "answer": 3,
+    "hint": "Tất cả đều đúng."
+  },
+  {
+    "id": 77,
+    "question": "Trong PowerPoint 2010, chọn phát biểu KHÔNG đúng khi lưu tập tin:",
+    "options": ["Khi đang mở 1 file trình chiếu đã lưu, vào File/Save để lưu 1 tên mới", "Khi vừa mở 1 cửa sổ mới, vào File/Save As để lưu với 1 tên mới", "Khi đang mở 1 file, vào File/Save As để lưu với tên mới", "Khi file mới chưa lưu, chọn Save hay Save As là như nhau"],
+    "answer": 0,
+    "hint": "File/Save chỉ lưu đè lên file đang có."
+  },
+  {
+    "id": 78,
+    "question": "Bạn nên đặt màn hình máy tính trên bàn như thế nào là chuẩn công thái học?",
+    "options": ["Vị trí mép trên của nó ngang tầm mắt", "Đặt nó càng gần mắt càng tốt", "Đặt nó trực tiếp dưới sàn", "Mép trên cao hơn tầm mắt 20 inch"],
+    "answer": 0,
+    "hint": "Mép trên màn hình ngang tầm mắt."
+  },
+  {
+    "id": 79,
+    "question": "Phím tắt nào cho lệnh Copy?",
+    "options": ["Ctrl + V", "Alt + F4", "Ctrl + Z", "Ctrl + C"],
+    "answer": 3,
+    "hint": "Ctrl + C."
+  },
+  {
+    "id": 80,
+    "question": "Mục nào trong Task Manager cung cấp biểu đồ chi tiết về RAM và CPU?",
+    "options": ["Resource Monitor", "Performance", "Processes", "Services"],
+    "answer": 1,
+    "hint": "Performance."
+  },
+  {
+    "id": 81,
+    "question": "Trong PowerPoint 2010, muốn thêm 1 slide mới giống hệt slide đã tạo, ta dùng:",
+    "options": ["File/New Slide", "Insert/Duplicate Slide", "Insert/New slide", "View/Duplicate"],
+    "answer": 1,
+    "hint": "Duplicate Slide."
+  },
+  {
+    "id": 82,
+    "question": "Di chuyển sang màn hình/trang tiếp theo sử dụng phím nào?",
+    "options": ["Ctrl + Home", "Home", "Ctrl Down Arrow", "PgDn (Page Down)"],
+    "answer": 3,
+    "hint": "Page Down."
+  },
+  {
+    "id": 83,
+    "question": "Dấu hiệu mô tả lỗi chính tả khi gõ văn bản Word là gì?",
+    "options": ["Đường lượn sóng màu xanh lá cây", "Đường lượn sóng màu xanh da trời", "Đường lượn sóng màu đen", "Đường lượn sóng màu đỏ"],
+    "answer": 3,
+    "hint": "Đường gạch lượn sóng đỏ."
+  },
+  {
+    "id": 84,
+    "question": "End User License Agreement (EULA) là gì?",
+    "options": ["Thỏa thuận cho người dùng cuối toàn quyền sửa mã nguồn", "Cố vấn pháp lý", "Hợp đồng cấp phép sử dụng giữa công ty phần mềm và người dùng cuối", "Quy chuẩn thiết bị phần cứng"],
+    "answer": 2,
+    "hint": "Hợp đồng thỏa thuận giấy phép sử dụng."
+  },
+  {
+    "id": 85,
+    "question": "Trong Excel, ô D2 có công thức =B2*C2/100. Sao chép công thức đến ô E4 thì công thức tại E4 là:",
+    "options": ["=D4*E4/100", "=C4*D4/100", "=E6*F6/100", "=B4*C4/100"],
+    "answer": 1,
+    "hint": "Tăng 1 cột và 2 dòng: =C4*D4/100."
+  },
+  {
+    "id": 86,
+    "question": "Trong PowerPoint 2010, lựa chọn nào KHÔNG phải là định dạng file của bài thuyết trình?",
+    "options": ["*.pptx", "*.ppsx", "*.pdf", "*.ppt"],
+    "answer": 2,
+    "hint": "PDF là tệp tài liệu tĩnh."
+  },
+  {
+    "id": 87,
+    "question": "Làm thế nào để lưu lại một trang web để bạn nhanh chóng truy cập vào nó sau này?",
+    "options": ["Lưu nó thành 1 tài liệu Word", "Gửi email cho chính mình", "In trang web đó", "Lưu vào mục Dấu trang / Yêu thích (Bookmarks/Favorites)"],
+    "answer": 3,
+    "hint": "Bookmarks / Favorites."
+  },
+  {
+    "id": 88,
+    "question": "Trong Windows 7, trình hỗ trợ tương thích Program Compatibility Assistant (PCA) có tác dụng gì?",
+    "options": ["Mô phỏng khả năng của phiên bản trước để chạy phần mềm cũ", "Chỉnh sửa code của ứng dụng", "Tìm bản cập nhật mới", "Cho phép quay lại Win XP"],
+    "answer": 0,
+    "hint": "Chạy tương thích ứng dụng cũ."
+  },
+  {
+    "id": 89,
+    "question": "Công nghệ nào cho phép người dùng có thể truy cập Internet di động ở bất cứ nơi đâu có sóng di động?",
+    "options": ["VPN", "ADSL", "ISDN", "Cellular (Mạng di động)"],
+    "answer": 3,
+    "hint": "Cellular."
+  },
+  {
+    "id": 90,
+    "question": "Lựa chọn nào sau đây KHÔNG phải là đặc điểm của Email?",
+    "options": ["Trao đổi tin nhắn kỹ thuật số", "Bắt buộc phải video chat trực tiếp đồng thời", "Yêu cầu tên người dùng và mật khẩu", "Cần có địa chỉ email người nhận"],
+    "answer": 1,
+    "hint": "Email là gửi nhận không đồng bộ."
+  },
+  {
+    "id": 91,
+    "question": "Lựa chọn nào đúng về chứng chỉ bảo mật (Security Certificate)?",
+    "options": ["Không bao giờ hết hạn", "Các chứng chỉ bảo mật số hợp lệ thường được cấp tự động bởi các tổ chức CA uy tín", "Một chứng chỉ bị hủy vẫn an toàn", "Chỉ dành cho mạng LAN"],
+    "answer": 1,
+    "hint": "Được cấp và xác thực bởi CA."
+  },
+  {
+    "id": 92,
+    "question": "Phát biểu nào sau đây đúng với Internet?",
+    "options": ["Mục đích của Internet là tự do liên kết và trao đổi thông tin toàn cầu", "Chỉ chạy trên hệ điều hành Windows", "Internet mới hình thành từ năm 2020", "Internet chỉ là mạng riêng nội bộ"],
+    "answer": 0,
+    "hint": "Liên kết và trao đổi thông tin toàn cầu."
+  },
+  {
+    "id": 93,
+    "question": "Loại bộ nhớ nào dùng chủ yếu cho bộ nhớ Cache trong CPU?",
+    "options": ["ROM", "DRAM", "SRAM (Static RAM)", "Flash SSD"],
+    "answer": 2,
+    "hint": "SRAM (RAM tĩnh)."
+  },
+  {
+    "id": 94,
+    "question": "Trong PowerPoint 2010, phím tắt để bắt đầu trình chiếu từ slide đầu tiên là:",
+    "options": ["Alt + F5", "Ctrl + F5", "F5", "Shift + F5"],
+    "answer": 2,
+    "hint": "Phím F5."
+  },
+  {
+    "id": 95,
+    "question": "Chọn phát biểu đúng về sử dụng mẫu thiết kế (Themes) trong PowerPoint:",
+    "options": ["Người dùng có thể tạo mẫu Theme mới và áp dụng cho nhiều bài thuyết trình", "Không thể dùng Theme ngoài", "Chỉ áp dụng Theme được cho 1 slide duy nhất", "Theme không đổi được font chữ"],
+    "answer": 0,
+    "hint": "Theme có thể tái sử dụng cho nhiều bài."
+  },
+  {
+    "id": 96,
+    "question": "Sử dụng dấu nào đặt trước từ khóa để tìm kiếm loại trừ trên Google?",
+    "options": ["Dấu trừ (-)", "Dấu sao (*)", "Dấu ngoặc đơn ()", "Dấu ngoặc vuông []"],
+    "answer": 0,
+    "hint": "Dấu trừ (-)."
+  },
+  {
+    "id": 97,
+    "question": "Các chương trình và công cụ tiện ích cơ bản tích hợp sẵn trong Windows nằm trong mục nào?",
+    "options": ["All Programs", "Windows Accessories", "Startup", "System Tools"],
+    "answer": 1,
+    "hint": "Windows Accessories."
+  },
+  {
+    "id": 98,
+    "question": "Số dòng và số cột tối đa trong một Sheet của Excel 2010 là bao nhiêu?",
+    "options": ["1,048,576 hàng và 16,384 cột", "65,536 hàng và 256 cột", "1,000,000 hàng và 10,000 cột", "500,000 hàng và 8,192 cột"],
+    "answer": 0,
+    "hint": "1.048.576 hàng và 16.384 cột."
+  },
+  {
+    "id": 99,
+    "question": "Làm sao để xóa tập tin vĩnh viễn không cần chuyển vào Recycle Bin?",
+    "options": ["Ctrl + Delete", "Chuột phải chọn Delete", "Alt + Delete", "Shift + Delete"],
+    "answer": 3,
+    "hint": "Shift + Delete."
+  },
+  {
+    "id": 100,
+    "question": "Cách xem nào trong Windows Explorer giúp xem rõ thời gian tạo và sửa đổi tập tin?",
+    "options": ["Details (hoặc Content)", "Large Icons", "Small Icons", "Tiles"],
+    "answer": 0,
+    "hint": "Details/Content."
+  },
+  {
+    "id": 101,
+    "question": "Giao thức duyệt web nào được mã hóa truyền tải an toàn?",
+    "options": ["URL", "HTTP", "HTTPS", "DNS"],
+    "answer": 2,
+    "hint": "HTTPS."
+  },
+  {
+    "id": 102,
+    "question": "Trong Excel, ký tự nào dùng để phân cách các đối số trong hàm tính toán?",
+    "options": ["Dấu chấm (.)", "Dấu hai chấm (:)", "Dấu phẩy hoặc chấm phẩy (;)", "Dấu gạch ngang (-)"],
+    "answer": 2,
+    "hint": "Dấu phẩy hoặc chấm phẩy (tùy cài đặt)."
+  },
+  {
+    "id": 103,
+    "question": "Loại đơn vị nào dùng để đo dung lượng của ổ đĩa cứng?",
+    "options": ["Mbps", "Gbps", "GB hoặc TB", "GHz"],
+    "answer": 2,
+    "hint": "GB / TB."
+  },
+  {
+    "id": 104,
+    "question": "Loại dữ liệu nào sau đây Excel không hỗ trợ xử lý như một kiểu dữ liệu bảng tính chuẩn?",
+    "options": ["BMP", "XML", "XLA", "TXT"],
+    "answer": 0,
+    "hint": "BMP (tệp hình ảnh)."
+  },
+  {
+    "id": 105,
+    "question": "Làm sao để nhận biết một siêu liên kết (Hyperlink) trong tài liệu Word?",
+    "options": ["Văn bản màu đỏ gạch chân", "Văn bản in nghiêng màu xanh lá", "Văn bản màu xanh lam, có gạch chân", "Văn bản màu tím in đậm"],
+    "answer": 2,
+    "hint": "Màu xanh dương có gạch chân."
+  },
+  {
+    "id": 106,
+    "question": "Khi bạn cần thụt lề cho một đoạn văn bản trong Word, bạn có thể dùng cách nào?",
+    "options": ["Dùng phím Tab hoặc nhóm Paragraph ở thẻ Home/Page Layout", "Vào menu Insert", "Nhấn phím Cách (Space) 50 lần", "Đổi phông chữ"],
+    "answer": 0,
+    "hint": "Phím Tab hoặc nhóm Paragraph."
+  },
+  {
+    "id": 107,
+    "question": "Bạn làm gì trong Windows 7 để thay đổi hình nền Desktop?",
+    "options": ["Start -> Control Panel -> Personalization", "Start -> Clock and Region", "Start -> Task Manager", "Start -> Device Manager"],
+    "answer": 0,
+    "hint": "Personalization."
+  },
+  {
+    "id": 108,
+    "question": "Bạn cần gửi nhiều tệp kích thước lớn qua email, cách xử lý hiệu quả nhất là gì?",
+    "options": ["Nén các tệp lại thành một file nén (.zip/.rar) rồi gửi đính kèm", "Gửi từng tệp lẻ một", "Đổi tên file thành đuôi .txt", "Chụp ảnh màn hình từng file"],
+    "answer": 0,
+    "hint": "Dùng phần mềm nén tệp."
+  },
+  {
+    "id": 109,
+    "question": "Làm thế nào bạn có thể dọn dẹp tăng dung lượng không gian trống an toàn trên ổ đĩa?",
+    "options": ["Cài phần mềm đồ họa", "Xóa thư mục Windows", "Chạy chương trình Disk Cleanup", "Rút dây cáp ổ cứng"],
+    "answer": 2,
+    "hint": "Disk Cleanup."
+  },
+  {
+    "id": 110,
+    "question": "Trong Word 2010, khi nào người dùng cần nhấn phím Enter khi soạn thảo?",
+    "options": ["Khi kết thúc một đoạn văn bản hoặc muốn tạo dòng trống mới", "Khi con trỏ đến mép lề phải", "Sau khi gõ từng từ", "Chỉ nhấn khi in"],
+    "answer": 0,
+    "hint": "Chỉ khi kết thúc đoạn."
+  },
+  {
+    "id": 111,
+    "question": "Làm thế nào để nhận biết một slide đang bị ẩn (Hidden Slide) trong danh sách bên trái PowerPoint?",
+    "options": ["Số hiệu của slide có một đường gạch chéo xuyên qua nó", "Slide biến mất khỏi danh sách", "Slide chuyển thành màu xám hoàn toàn", "Slide nhấp nháy"],
+    "answer": 0,
+    "hint": "Số thứ tự bị gạch chéo."
+  },
+  {
+    "id": 112,
+    "question": "Phát biểu nào sau đây là đúng về công cụ tìm kiếm (Search Engine) trên Internet?",
+    "options": ["Là một hệ thống web cho phép tìm kiếm dữ liệu trên Internet", "Là con chip gắn trên bo mạch", "Chỉ tìm kiếm được tài liệu trong ổ C", "Chỉ hoạt động khi máy không có mạng"],
+    "answer": 0,
+    "hint": "Hệ thống web tra cứu thông tin."
+  },
+  {
+    "id": 113,
+    "question": "Trong hộp thoại Find & Replace, mục nào dùng để nhập từ khóa cần tìm kiếm?",
+    "options": ["Find What", "Replace With", "Look in", "Match Case"],
+    "answer": 0,
+    "hint": "Find What."
+  },
+  {
+    "id": 114,
+    "question": "Trong bảng tính Excel, cho A4=4, A2=5, A3=6. Tại ô B2 lập công thức =SUM(A4, A2, COUNT(A3, A4)). Kết quả là:",
+    "options": ["11", "9", "10", "Báo lỗi"],
+    "answer": 0,
+    "hint": "COUNT đếm được 2 ô -> 4 + 5 + 2 = 11."
+  },
+  {
+    "id": 115,
+    "question": "Phát biểu nào sau đây là đúng nhất về CPU?",
+    "options": ["CPU thường được tích hợp trên một chip vi mạch gọi là vi xử lý", "CPU viết tắt của Computer Personal Unit", "CPU là phần mềm soạn thảo", "CPU được cấu tạo thuần túy từ RAM"],
+    "answer": 0,
+    "hint": "Vi xử lý (Microprocessor)."
+  },
+  {
+    "id": 116,
+    "question": "Khái niệm nào cho biết hệ điều hành có khả năng thực thi nhiều tiến trình cùng lúc?",
+    "options": ["Đơn nhiệm", "Đa phiên", "Đa nhiệm (Multitasking)", "Đa tài khoản"],
+    "answer": 2,
+    "hint": "Đa nhiệm."
+  },
+  {
+    "id": 117,
+    "question": "Công cụ nào dùng để sao lưu và phục hồi phiên bản tệp trước đó trong Windows 7?",
+    "options": ["Previous Versions", "Task Scheduler", "Ease of Access", "Action Center"],
+    "answer": 0,
+    "hint": "Previous Versions."
+  },
+  {
+    "id": 118,
+    "question": "Trong Excel 2010, khi muốn nội dung ô tự động hiển thị trên nhiều dòng do cột quá hẹp, ta dùng:",
+    "options": ["Wrap Text", "Merge & Center", "Shrink to Fit", "AutoSum"],
+    "answer": 0,
+    "hint": "Wrap Text."
+  },
+  {
+    "id": 119,
+    "question": "Để chèn Footnote (ghi chú chân trang) trong Microsoft Word, bạn vào thẻ nào?",
+    "options": ["References -> Insert Footnote", "Home -> Footnote", "Insert -> Footer", "View -> Footnote"],
+    "answer": 0,
+    "hint": "Thẻ References."
+  },
+  {
+    "id": 120,
+    "question": "Kiểu căn ảnh Wrapping Style nào giữ cho bức ảnh nằm trên cùng 1 dòng văn bản như một ký tự thông thường?",
+    "options": ["In Line with Text", "Behind Text", "In Front of Text", "Square"],
+    "answer": 0,
+    "hint": "In Line with Text."
+  },
+  {
+    "id": 121,
+    "question": "Tính năng chèn văn bản hoặc hình ảnh mờ chìm dưới nền tài liệu Word (đóng dấu bản quyền) là gì?",
+    "options": ["Watermark", "Background Color", "Page Border", "Footer"],
+    "answer": 0,
+    "hint": "Watermark."
+  },
+  {
+    "id": 122,
+    "question": "Kiểu căn ảnh nào cho phép ảnh nằm chìm hoàn toàn bên dưới các dòng chữ văn bản?",
+    "options": ["Behind Text", "In Front of Text", "Square", "Tight"],
+    "answer": 0,
+    "hint": "Behind Text."
+  },
+  {
+    "id": 123,
+    "question": "Tính năng SEO (Search Engine Optimization) được hiểu là:",
+    "options": ["Quá trình tối ưu hóa giúp nâng cao thứ hạng hiển thị của website trên công cụ tìm kiếm", "Một phần mềm diệt virus", "Hệ điều hành cho điện thoại", "Dây cáp nối mạng"],
+    "answer": 0,
+    "hint": "Tối ưu hóa công cụ tìm kiếm."
+  },
+  {
+    "id": 124,
+    "question": "Trong Excel, nếu một ô tính toán trả về kết quả kiểu số hoặc ngày tháng nhưng cột quá hẹp sẽ hiển thị dạng:",
+    "options": ["Các ký tự # liên tiếp (######)", "Chữ ERROR", "Ký tự $", "Dấu gạch ngang"],
+    "answer": 0,
+    "hint": "Dãy dấu thăng."
+  }
+]
