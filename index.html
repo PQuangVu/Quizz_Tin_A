@@ -17,7 +17,7 @@
             <div class="bg-indigo-600 text-white p-2 rounded-lg font-bold text-lg">IT-A</div>
             <div>
                 <h1 class="text-lg font-bold text-gray-800">Luyện Thi Chứng Chỉ Tin Học A</h1>
-                <p class="text-xs text-gray-500">Nguồn câu hỏi từ JSON • 20 câu ngẫu nhiên / đề</p>
+                <p class="text-xs text-gray-500">Thuật toán phủ đều câu hỏi • Giải thích chi tiết</p>
             </div>
         </div>
         <div id="timer-box" class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full font-semibold text-sm flex items-center space-x-2">
@@ -34,14 +34,24 @@
             </div>
             <h2 class="text-2xl font-bold text-gray-800">Sẵn sàng luyện thi Tin học A?</h2>
             <p class="text-gray-600 max-w-md mx-auto">
-                Hệ thống tự động trích xuất ngẫu nhiên <strong>20 câu hỏi</strong> từ kho dữ liệu JSON ôn tập. Bạn có thể làm lại bài không giới hạn!
+                Hệ thống ưu tiên chọn các câu hỏi <strong>chưa từng xuất hiện</strong> giúp bạn bao quát toàn bộ ngân hàng câu hỏi.
             </p>
-            <div class="inline-flex items-center space-x-2 text-xs text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-full font-medium">
-                <span>📚 Tổng số câu hỏi sẵn có: <strong id="total-pool-count">Đang tải...</strong> câu</span>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 text-xs">
+                <span class="text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-full font-medium">
+                    📚 Tổng số câu: <strong id="total-pool-count">...</strong> câu
+                </span>
+                <span class="text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full font-medium">
+                    ✅ Chưa làm: <strong id="unseen-count">...</strong> câu
+                </span>
             </div>
-            <div>
-                <button id="start-btn" onclick="startQuiz()" disabled class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed">
+
+            <div class="pt-2 flex flex-col sm:flex-row justify-center gap-3">
+                <button id="start-btn" onclick="startNewSet()" disabled class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 disabled:opacity-50">
                     Bắt đầu làm bài thi
+                </button>
+                <button onclick="resetSeenHistory()" class="text-gray-500 hover:text-gray-700 text-xs py-2 px-3 underline">
+                    Đặt lại lịch sử xem câu hỏi
                 </button>
             </div>
         </div>
@@ -49,7 +59,7 @@
         <!-- Quiz Screen -->
         <div id="quiz-screen" class="hidden bg-white rounded-2xl shadow-xl p-6 sm:p-8 space-y-6">
             <div class="flex justify-between items-center text-sm text-gray-500 font-medium border-b pb-4">
-                <span>Câu hỏi <span id="current-q-num" class="font-bold text-indigo-600">1</span> / 20</span>
+                <span>Câu hỏi <span id="current-q-num" class="font-bold text-indigo-600">1</span> / <span id="quiz-total-q">20</span></span>
                 <span class="bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full text-xs font-semibold">Trắc nghiệm Tin học A</span>
             </div>
 
@@ -71,7 +81,7 @@
                     <span>💡 Xem gợi ý</span>
                 </button>
                 <div class="space-x-3">
-                    <button id="prev-btn" onclick="prevQuestion()" class="px-5 py-2.5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 font-medium text-sm transition disabled:opacity-50 disabled:cursor-not-allowed">
+                    <button id="prev-btn" onclick="prevQuestion()" class="px-5 py-2.5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 font-medium text-sm transition disabled:opacity-50">
                         Quay lại
                     </button>
                     <button id="next-btn" onclick="nextQuestion()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-xl font-medium text-sm shadow transition">
@@ -88,17 +98,22 @@
                 <h2 class="text-2xl font-bold text-gray-800">Hoàn thành bài thi!</h2>
                 <p class="text-gray-600 mt-1">Kết quả kiểm tra kiến thức của bạn</p>
             </div>
+            
             <div class="bg-indigo-50 p-6 rounded-2xl max-w-xs mx-auto space-y-2">
                 <div class="text-4xl font-extrabold text-indigo-600" id="final-score">0/20</div>
                 <div class="text-sm font-medium text-indigo-700" id="score-comment"></div>
                 <div class="text-xs text-gray-500 pt-2 border-t">Thời gian làm bài: <span id="total-time">00:00</span></div>
             </div>
+
             <div class="flex flex-col sm:flex-row justify-center gap-3 pt-4">
-                <button onclick="reviewAnswers()" class="px-6 py-3 border border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-semibold rounded-xl transition">
-                    🔍 Xem lại đáp án & giải thích
+                <button onclick="reviewAnswers()" class="px-5 py-3 border border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-semibold rounded-xl transition">
+                    🔍 Xem đáp án & giải thích
                 </button>
-                <button onclick="startQuiz()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 font-semibold rounded-xl shadow transition">
-                    🔄 Làm lại bộ đề mới
+                <button onclick="retryCurrentSet()" class="px-5 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-xl shadow transition">
+                    🔁 Làm lại đề này
+                </button>
+                <button onclick="startNewSet()" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow transition">
+                    🔄 Đề mới tiếp theo
                 </button>
             </div>
         </div>
@@ -106,21 +121,24 @@
         <!-- Review Screen -->
         <div id="review-screen" class="hidden bg-white rounded-2xl shadow-xl p-6 sm:p-8 space-y-6">
             <div class="flex justify-between items-center border-b pb-4">
-                <h2 class="text-xl font-bold text-gray-800">Chi tiết đáp án</h2>
+                <h2 class="text-xl font-bold text-gray-800">Chi tiết đáp án & giải thích</h2>
                 <button onclick="backToResult()" class="text-indigo-600 hover:text-indigo-700 font-semibold text-sm">
                     ← Quay lại kết quả
                 </button>
             </div>
             <div id="review-list" class="space-y-6 max-h-[60vh] overflow-y-auto pr-2"></div>
-            <div class="text-center pt-4 border-t">
-                <button onclick="startQuiz()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 font-semibold rounded-xl shadow transition">
-                    🔄 Làm lại bộ đề mới
+            <div class="flex justify-center gap-3 pt-4 border-t">
+                <button onclick="retryCurrentSet()" class="px-5 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-xl shadow transition">
+                    🔁 Làm lại đề này
+                </button>
+                <button onclick="startNewSet()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 font-semibold rounded-xl shadow transition">
+                    🔄 Sang bộ đề mới
                 </button>
             </div>
         </div>
     </main>
 
-    <!-- Footer nổi bật -->
+    <!-- Footer -->
     <footer class="text-center py-8 px-4 bg-white/70 backdrop-blur-sm border-t border-indigo-100 shadow-sm mt-8">
         <p class="text-base sm:text-lg font-bold text-indigo-900 tracking-wide">
             🍀 Chúc Đoan Trang bình tĩnh, tự tin và thi đậu Tin học A với kết quả cao nhất!
@@ -135,20 +153,48 @@
         let timerInterval = null;
         let secondsElapsed = 0;
 
-        // Tự động tải dữ liệu từ tệp questions.json
+        const SEEN_STORAGE_KEY = 'tin_a_seen_question_ids';
+
         window.addEventListener('DOMContentLoaded', async () => {
             try {
                 const response = await fetch('questions.json');
-                if (!response.ok) throw new Error('Không thể tải tệp questions.json');
+                if (!response.ok) throw new Error('Không tải được questions.json');
                 questionPool = await response.json();
+                
                 document.getElementById('total-pool-count').innerText = questionPool.length;
                 document.getElementById('start-btn').disabled = false;
+                updateSeenStats();
             } catch (err) {
                 console.error(err);
-                document.getElementById('total-pool-count').innerText = 'Lỗi tải tệp';
-                alert('Vui lòng đảm bảo tệp questions.json nằm cùng thư mục với tệp HTML (và mở thông qua một local server như Live Server trong VS Code).');
+                document.getElementById('total-pool-count').innerText = 'Lỗi file';
             }
         });
+
+        function getSeenIds() {
+            try {
+                return JSON.parse(localStorage.getItem(SEEN_STORAGE_KEY)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function saveSeenIds(ids) {
+            localStorage.setItem(SEEN_STORAGE_KEY, JSON.stringify(ids));
+            updateSeenStats();
+        }
+
+        function updateSeenStats() {
+            const seenIds = getSeenIds();
+            const unseenCount = Math.max(0, questionPool.length - seenIds.length);
+            const unseenEl = document.getElementById('unseen-count');
+            if (unseenEl) unseenEl.innerText = unseenCount;
+        }
+
+        function resetSeenHistory() {
+            localStorage.removeItem(SEEN_STORAGE_KEY);
+            updateSeenStats();
+            alert('Đã làm mới lịch sử xem câu hỏi! Tất cả các câu sẽ bắt đầu quay vòng lại từ đầu.');
+        }
 
         function shuffle(array) {
             let cur = array.length, rand;
@@ -160,11 +206,42 @@
             return array;
         }
 
-        function startQuiz() {
-            const poolCopy = JSON.parse(JSON.stringify(questionPool));
-            shuffle(poolCopy);
-            currentQuestions = poolCopy.slice(0, 20);
+        // Bốc 20 câu ngẫu nhiên ưu tiên câu chưa từng xuất hiện
+        function pickQuestions() {
+            let seenIds = getSeenIds();
             
+            // Lọc các câu chưa xem
+            let unseenPool = questionPool.filter(q => !seenIds.includes(q.id));
+            
+            // Nếu số câu chưa xem < 20, reset kho đã xem để tránh thiếu câu
+            if (unseenPool.length < 20) {
+                seenIds = [];
+                saveSeenIds([]);
+                unseenPool = [...questionPool];
+            }
+
+            shuffle(unseenPool);
+            const selected = unseenPool.slice(0, 20);
+
+            // Ghi nhớ các câu đã bốc vào lịch sử
+            const newlySeenIds = [...seenIds, ...selected.map(q => q.id)];
+            saveSeenIds(newlySeenIds);
+
+            return selected;
+        }
+
+        // Bắt đầu bộ đề mới
+        function startNewSet() {
+            currentQuestions = pickQuestions();
+            initQuizSession();
+        }
+
+        // Làm lại đúng bộ đề hiện tại (giữ nguyên câu hỏi để rèn lại phần sai)
+        function retryCurrentSet() {
+            initQuizSession();
+        }
+
+        function initQuizSession() {
             currentIndex = 0;
             userAnswers = {};
             secondsElapsed = 0;
@@ -173,6 +250,7 @@
             document.getElementById('result-screen').classList.add('hidden');
             document.getElementById('review-screen').classList.add('hidden');
             document.getElementById('quiz-screen').classList.remove('hidden');
+            document.getElementById('quiz-total-q').innerText = currentQuestions.length;
 
             startTimer();
             loadQuestion();
@@ -191,11 +269,11 @@
         function loadQuestion() {
             const q = currentQuestions[currentIndex];
             document.getElementById('current-q-num').innerText = currentIndex + 1;
-            document.getElementById('progress-bar').style.width = `${((currentIndex + 1) / 20) * 100}%`;
+            document.getElementById('progress-bar').style.width = `${((currentIndex + 1) / currentQuestions.length) * 100}%`;
             document.getElementById('question-text').innerText = q.question;
             
             document.getElementById('hint-box').classList.add('hidden');
-            document.getElementById('hint-text').innerText = q.hint || "Không có gợi ý cho câu hỏi này.";
+            document.getElementById('hint-text').innerText = q.hint || "Câu hỏi lý thuyết cơ bản.";
 
             const optionsContainer = document.getElementById('options-container');
             optionsContainer.innerHTML = '';
@@ -271,7 +349,7 @@
             document.getElementById('quiz-screen').classList.add('hidden');
             document.getElementById('result-screen').classList.remove('hidden');
 
-            document.getElementById('final-score').innerText = `${correctCount} / 20`;
+            document.getElementById('final-score').innerText = `${correctCount} / ${currentQuestions.length}`;
             
             const mins = Math.floor(secondsElapsed / 60);
             const secs = secondsElapsed % 60;
@@ -285,13 +363,13 @@
                 iconEl.className = "w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-4xl";
                 iconEl.innerText = "🏆";
             } else if (correctCount >= 14) {
-                commentEl.innerText = "Khá tốt! Ôn thêm một vài câu chưa chắc chắn nhé.";
+                commentEl.innerText = "Khá tốt! Ôn lại các câu sai để chắc ăn 10 điểm nhé.";
                 iconEl.className = "w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto text-4xl";
                 iconEl.innerText = "👏";
             } else {
-                commentEl.innerText = "Cần cố gắng thêm! Hãy xem lại các câu chưa đúng bên dưới.";
-                iconEl.className = "w-20 h-20 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto text-4xl";
-                iconEl.innerText = "📖";
+                commentEl.innerText = "Chưa đạt yêu cầu! Hãy xem giải thích và bấm 'Làm lại đề này' nhé.";
+                iconEl.className = "w-20 h-20 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mx-auto text-4xl";
+                iconEl.innerText = "💪";
             }
         }
 
@@ -338,11 +416,14 @@
                 div.innerHTML = `
                     <div class="flex items-center justify-between">
                         <span class="text-xs font-bold px-2.5 py-1 rounded-full ${isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'}">
-                            Câu ${idx + 1}:${isCorrect ? 'Đúng' : 'Sai / Chưa làm'}
+                            Câu ${idx + 1}: ${isCorrect ? 'Đúng' : 'Sai / Chưa làm'}
                         </span>
                     </div>
                     <h4 class="font-bold text-gray-800 text-base">${q.question}</h4>
                     <div class="space-y-2 pt-2">${optionsHtml}</div>
+                    <div class="text-xs text-indigo-900 bg-indigo-50/70 p-3 rounded-xl border border-indigo-100 mt-2">
+                        💡 <strong>Giải thích lý do:</strong> ${q.hint || "Đáp án chuẩn theo chuẩn đề thi chứng chỉ Tin học A."}
+                    </div>
                 `;
                 reviewList.appendChild(div);
             });
