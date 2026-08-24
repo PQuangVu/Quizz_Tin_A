@@ -209,24 +209,31 @@
         // Bốc 20 câu ngẫu nhiên ưu tiên câu chưa từng xuất hiện
         function pickQuestions() {
             let seenIds = getSeenIds();
-            
-            // Lọc các câu chưa xem
             let unseenPool = questionPool.filter(q => !seenIds.includes(q.id));
-            
-            // Nếu số câu chưa xem < 20, reset kho đã xem để tránh thiếu câu
-            if (unseenPool.length < 20) {
-                seenIds = [];
-                saveSeenIds([]);
-                unseenPool = [...questionPool];
+            let selected = [];
+
+            // Nếu số câu chưa làm >= 20: Bốc 20 câu bình thường
+            if (unseenPool.length >= 20) {
+                shuffle(unseenPool);
+                selected = unseenPool.slice(0, 20);
+                saveSeenIds([...seenIds, ...selected.map(q => q.id)]);
+            } else {
+                // Nếu còn ít hơn 20 câu (ví dụ còn 4 câu cuối): Lấy hết số câu còn lại
+                selected = [...unseenPool];
+                
+                // Reset lại kho câu hỏi để lấy phần còn thiếu bù cho đủ 20 câu
+                let remainingPool = questionPool.filter(q => !selected.some(s => s.id === q.id));
+                shuffle(remainingPool);
+                
+                const needed = 20 - selected.length;
+                const fillUp = remainingPool.slice(0, needed);
+                selected = [...selected, ...fillUp];
+                
+                // Bắt đầu chu kỳ mới với danh sách ghi nhớ là các câu vừa lấy bù
+                saveSeenIds(fillUp.map(q => q.id));
             }
 
-            shuffle(unseenPool);
-            const selected = unseenPool.slice(0, 20);
-
-            // Ghi nhớ các câu đã bốc vào lịch sử
-            const newlySeenIds = [...seenIds, ...selected.map(q => q.id)];
-            saveSeenIds(newlySeenIds);
-
+            shuffle(selected); // Trộn ngẫu nhiên thứ tự 20 câu trong đề thi
             return selected;
         }
 
